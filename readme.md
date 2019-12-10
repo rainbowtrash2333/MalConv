@@ -1,18 +1,14 @@
----
-title: 通过MalConv模型实现恶意软件的分类
-date: 2019-10-06
-publishdate: 2019-10-06
-lastmod: 2019-10-06
-tags: ["python","tensorflow","分类","恶意软件"]
-author: "Twikura"
-draft: false
----
-
 # 前言
 
 本文通过参考论文[《Malware Detection by Eating a Whole EXE》](https://arxiv.org/abs/1710.09435)，更具使用论文提出的MalConv模型，使用Tensorflow实现了恶意软件的分类。
 
 原模型是侦测是否为恶意软件，本文通过修改模型（其实几乎没有修改）进而实现恶意软件的分类。
+
+# 版本
+
+v1：实现MalConv模型。
+
+v2：在v1的基础上使用tensorboard实现可视化，并增加precision，recall， F1指数和显示每次分类的混淆矩阵。
 
 # 数据集
 
